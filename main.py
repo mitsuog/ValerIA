@@ -73,7 +73,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         )
         reply = response.choices[0].message.content
         cierre = random.choice(CLOSING_PHRASES)
-        reply = f"{reply}
+        reply = f"{reply}\n\n{cierre}"
 
 {cierre}"
     except Exception as e:
