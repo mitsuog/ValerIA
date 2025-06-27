@@ -75,7 +75,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         cierre = random.choice(CLOSING_PHRASES)
         reply = f"{reply}\n\n{cierre}"
 
-{cierre}"
     except Exception as e:
         reply = f"Ups, hubo un problema al hablar con el cerebro de ValerIA: {e}"
 
