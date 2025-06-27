@@ -59,8 +59,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_input = update.message.text
-    SYSTEM_PROMPT = "Idioma: Español.\n" + BASE_PROMPT
-" + BASE_PROMPT
+    SYSTEM_PROMPT = "Idioma: Español.\n" + BASE_PROMPT" + BASE_PROMPT
 
     try:
         response = client.chat.completions.create(
